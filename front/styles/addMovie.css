@@ -1,0 +1,29 @@
+body{
+    background: #4ECDC4;  
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);
+background: linear-gradient(to right, #556270, #4ECDC4); 
+}
+.navbar{
+    background: #4ECDC4;
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  
+background: linear-gradient(to right, #556270, #4ECDC4);
+}
+.containerSize{
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.753);
+   
+}
+
+.btn {
+    background-color:#18726c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease-in-out; */
+}
+
+.btn:hover {
+    background-color:#06302d;
+}

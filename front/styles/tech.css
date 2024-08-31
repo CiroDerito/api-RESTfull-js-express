@@ -1,0 +1,54 @@
+body{
+  background: #bdc3c7;  
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+  
+}
+.navbar{
+  background: #bdc3c7;  
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+}
+section h1{
+    color: rgb(255, 255, 255);
+    font-family: "Fjalla One", sans-serif;  font-weight: 400;
+    font-style:oblique;
+    font-size: 10em;
+    text-align: center;
+    margin: 40px;
+    animation: bounceInDown 1s ease-out;
+}
+
+.accordColor{
+  background-color: #C0C0C0;
+  
+}
+.brd-color{
+  border-color: #1a1919a4;
+}
+.img-size{
+  width: 30%;
+}
+
+.sizingAccord{
+  max-width: 600px ;
+}
+
+  
+  @keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

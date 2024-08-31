@@ -1,0 +1,323 @@
+body{
+    background: #111111;  
+    background: -webkit-linear-gradient(to right, #690707, #111111);  
+    background: linear-gradient(to right, #690707, #111111); 
+
+}
+/*NAVBAR*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: -webkit-linear-gradient(to right, #690707, #111111);  
+    background: linear-gradient(to right, #690707, #111111); 
+    border: 1px solid #11111152;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    
+}
+.offcanvas {
+background-color: #000000e2;
+color: rgb(186, 155, 155);
+
+}
+.offcanvas-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.offcanvas-title{
+  margin:15%;
+}
+.offcanvas-item{
+margin:10%;
+width: 80%;
+
+}
+.offcanvas-item:hover{
+  color: #f5f2f2;
+
+   }
+ 
+  
+:root {
+  --body-bg-color: #1a1c1d;
+  --text-color: #aaaebc;
+  --hr-color: #26292a;
+  --transition-duration: 0.3s;
+  --transition-delay: 0.2s;
+  --red: #e74c3c;
+}
+
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 70px;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+
+.menu .border {
+  position: absolute;
+  left: 0;
+  background: currentColor;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.menu .border-top,
+.menu .border-bottom {
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.menu .border-left,
+.menu .border-right {
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+}
+
+.menu .border-top,
+.menu .border-left,
+.menu .border-right {
+  top: 0;
+}
+
+.menu .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.menu .border-top {
+  transform-origin: top left;
+}
+
+.menu .border-left {
+  transform-origin: bottom left;
+}
+
+.menu .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.menu a:hover .border-top,
+.menu a:hover .border-bottom {
+  transform: scaleX(1);
+}
+
+.menu a:hover .border-left,
+.menu a:hover .border-right {
+  transform: scaleY(1);
+}
+
+.menu a:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+
+.menu a:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.menu a:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+
+
+.menu[data-animation="diagonal"] .border-left {
+  transform-origin: top left;
+}
+
+.menu[data-animation="diagonal"] .border-right,
+.menu[data-animation="diagonal"] .border-bottom {
+  transform-origin: bottom right;
+}
+
+.menu[data-animation="diagonal"] a:hover [class^=border]{
+  transition-delay: 0s;
+}
+.btn-color{
+  color: #000000;
+  background-color: #a21c1ce0;
+  border-color: #000000;
+  font-weight: 600;
+  }
+  .btn-color:hover{
+  color: white;
+  background-color: #000000cc;
+  }
+
+  .home{
+    font-weight: 300;
+    font: 1.5em "Fjalla One", sans-serif;
+    font-style:oblique;
+}
+.home:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+   
+}
+
+.navbar-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-right a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline;
+    color: rgb(180, 26, 26);
+}
+
+
+/* SECCION MOVIES */
+
+
+
+.main h1{
+    color: rgb(255, 255, 255);
+    font-family: "Fjalla One", sans-serif;  font-weight: 400;
+    font-size: 5em;
+    padding-top: 50px;
+    text-align: center;
+   
+}
+#card-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0px auto;
+    max-width: 1000px;
+    overflow:visible;
+    
+  }
+  
+  .card {
+    width: 270px;
+    height: 450px;
+    perspective: 490px;
+    margin: 50px 3px;
+    padding: 0px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    
+  }
+  
+  .card-inner {
+    position: relative;
+  background-color: rgba(32, 31, 31, 0.824);
+  color: white;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+    border-radius: 8px;  
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+    border-radius: 8px;
+  }
+  .card-front img{
+    height: 100%;
+    width: 100%;
+  }
+
+ 
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .card-front {
+    background: transparent;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 6px;
+    
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;  font-weight: 400;
+    font-style:oblique;
+    font-size: 1.5em;
+    border-radius: 8px;
+  }
+  .organizate {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    align-items: start; 
+    
+  
+  }
+  
+  .text-descrip{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-top: 50px;
+    font-style: oblique;
+    color: rgba(255, 255, 255, 0.795);
+    
+  }
+
+  @media (max-width: 768px) {
+    .organizate {
+    display:block;
+    padding:0px;
+    margin: 0px 15px;
+    }
+    .text-descrip{
+      margin:0px 15px;
+    }
+    .navbar-left{
+      margin: 2%;
+    }
+  }
